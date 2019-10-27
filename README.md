@@ -4,9 +4,17 @@ In this work, we attempt to characterize the complexity of audio for selecting s
 ## Files description
 These two files are the funcations of calculating the audio complexity.<br>
 The function can calculate the audio complexity frame-by-frame.<br>
-Generally, the length of one frame is 10 ms, so the input audio signal should be longer than 10ms.<br>
-File "sval2.m" can be used in main funcation directly. The input is original audio, the output is the audio complexity frame-by-frame.<br>
+File "sval2.m" can be used in main function directly.<br>
 File "audiok.m" can calculate the adaptive convolution operator(kernel). Which is used in file "sval2.m" automatically.
+
+## Usage
+### c=sval2(s);
+s denotes the audio signal, c denotes the complexity of the s.<br>
+The audio complexity is calculated frame-by-frame.<br>
+Generally, the length of one frame is 10 ms, so the input audio signal should be longer than 10ms.<br>
+### k=audio(x);
+x denotes the part of audio signal used to calculate the adaptive convolution operator(kernel), k denotes the operator. <br>
+The length of k is as same as x.
 
 ## Software requirements
 Using MATLAB 2016b or the latest version.
