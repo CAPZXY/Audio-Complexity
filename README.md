@@ -4,7 +4,6 @@ In this work, we attempt to characterize the complexity of audio for selecting s
 
 ## Files description
 These two files are the funcations of calculating the audio complexity.<br>
-The function can calculate the audio complexity frame-by-frame.<br>
 File "sval2.m" can be used in main function directly.<br>
 File "audiok.m" can calculate the adaptive convolution operator(kernel). Which is used in file "sval2.m" automatically.
 
