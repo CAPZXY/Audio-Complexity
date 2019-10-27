@@ -3,3 +3,12 @@ In this work, we attempt to characterize the complexity of audio for selecting s
 
 Using MATLAB 2016b or latest version
 
+These two files are the funcations of calculating the audio complexity.
+
+The function can calculate the audio complexity frame-by-frame.
+
+Generally, the length of one frame is 10 ms, so the input audio signal should be longer than 10ms.
+
+File "sval2.m" can be used in main funcation directly. The input is original audio, the output is the audio complexity frame-by-frame.
+
+
